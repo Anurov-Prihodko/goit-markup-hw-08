@@ -1,0 +1,46 @@
+.features-title {
+  @include font($fw: 700);
+
+  line-height: 1.143;
+  text-transform: uppercase;
+  color: $text-head-color;
+  margin-bottom: 10px;
+}
+
+.features-text {
+  @include font();
+
+  line-height: 1.714;
+}
+
+.features-list {
+  display: flex;
+}
+
+.features-list-item {
+  width: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.tumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "";
+  height: 120px;
+  width: 270px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+}
+
+.features {
+  padding-top: 95px;
+  padding-bottom: 95px;
+}

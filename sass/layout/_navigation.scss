@@ -1,0 +1,82 @@
+.site-nav-link {
+  @include font($fw: 500, $ls: 0.02em);
+
+  line-height: 1.143;
+  color: $text-head-color;
+
+  transition: color $time $function-time;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.studio-blue {
+  color: $accent-color;
+}
+
+.portfolio-blue {
+  color: $accent-color;
+}
+
+.header-main .container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.strip::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+
+  width: 100%;
+  height: 4px;
+  background: $accent-color;
+  border-radius: 2px;
+
+  animation-name: underline;
+  animation-duration: $time;
+  animation-timing-function: $function-time;
+  /* animation-fill-mode: forwards; */
+  /* transform-origin: center; */
+}
+
+@keyframes underline {
+  0% {
+    /* transform: scaleX(0); */
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+
+  100% {
+    /* transform: scaleX(1); */
+    transform: rotate(180deg);
+    opacity: 1;
+  }
+}
+
+.site-nav-list {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.site-nav-link {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}

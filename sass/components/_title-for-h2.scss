@@ -1,0 +1,8 @@
+.title-for-two-blocks {
+  @include font(36px, 700);
+
+  line-height: 1.167;
+  text-align: center;
+  color: $text-head-color;
+  margin-bottom: 50px;
+}

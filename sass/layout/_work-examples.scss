@@ -1,0 +1,88 @@
+.work-examples-title {
+  @include font($fs: 18px, $fw: 700, $ls: 0.06em);
+
+  line-height: 2;
+  margin-bottom: 4px;
+  color: $text-head-color;
+}
+
+.work-examples-text {
+  @include font($fs: 16px);
+
+  line-height: 1.875;
+  color: $text-main-color;
+}
+
+.description-foto {
+  padding: 20px 25px;
+}
+
+.work-examples-item {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: calc((100% - 60px) / 3);
+  outline: 1px solid $border-work-examples;
+
+  &:nth-child(3n) {
+    margin-right: 0px;
+  }
+
+  &:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
+}
+
+.work-examples-img {
+  width: 370px;
+  height: 294px;
+}
+
+.work-examples-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.work-examples-link {
+  transition: box-shadow $time $function-time;
+
+  &:hover,
+  &:focus {
+    box-shadow: $work-examples-shadow;
+  }
+}
+
+.tehnocrack-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.tehnocrack-text {
+  font-family: $text-font;
+  margin: 0;
+  @include font($fs: 18px);
+
+  line-height: 1.556;
+  color: $white-color;
+  padding: 63px 24px;
+}
+
+.tehnocrack {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $card-background;
+  // opacity: 0;
+  overflow: auto;
+  transition: transform $time $function-time;
+  transform: translateY(100%);
+
+  .work-examples-link:hover &,
+  .work-examples-link:focus & {
+    transform: translateY(0);
+    // opacity: 1;
+  }
+}

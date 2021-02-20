@@ -1,0 +1,40 @@
+.our-team-title {
+  @include font($fs: 16px, $fw: 500);
+
+  line-height: 1.188;
+  color: $text-head-color;
+  margin-bottom: 10px;
+}
+
+.our-team-prof {
+  @include font($fs: 16px);
+
+  line-height: 1.188;
+  color: $text-main-color;
+  margin-bottom: 16px;
+}
+
+.our-team {
+  padding: 95px 0;
+  background-color: $background-team;
+}
+
+.our-team-description {
+  text-align: center;
+  padding: 30px 30px;
+}
+
+.our-team-item {
+  width: 270px;
+  background-color: $white-color;
+  box-shadow: $our-team-shadow;
+  border-radius: 0px 0px 4px 4px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.our-team-list {
+  display: flex;
+}

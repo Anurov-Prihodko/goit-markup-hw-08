@@ -15,12 +15,18 @@
   @media screen and (min-width: 1200px) {
     width: 1200px;
   }
-}
 
-//   & .basement-logo {
-//     display: inline-block;
-//     margin-right: 0px;
-//     margin-bottom: 20px;
-//     color: $white-color;
-//   }
-// }
+  & .basement-logo {
+    display: inline-block;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    color: $white-color;
+  }
+
+  @media screen and (max-width: 767px) {
+    & .basement-logo {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

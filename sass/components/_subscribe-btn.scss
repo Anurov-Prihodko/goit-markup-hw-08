@@ -18,6 +18,13 @@
   border: 0px;
 }
 
+@media screen and (max-width: 767px) {
+  .subscribe-btn-center {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .subscribe-icon {
   color: $white-color;
   fill: currentColor;

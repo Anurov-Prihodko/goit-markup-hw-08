@@ -1,11 +1,10 @@
 .logo-main {
   font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.192;
-  letter-spacing: 0.03em;
+  @include font($fs: 24px, $fw: 700);
+
+  line-height: 1.167;
   color: $black-color;
-  margin-right: 95px;
+  // margin-right: 95px;
 }
 
 .logo-portfolio {
@@ -14,4 +13,12 @@
 
 .logo-blue {
   color: $accent-color;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo-main {
+    @include font($fs: 26px, $fw: 700);
+
+    line-height: 1.192;
+  }
 }

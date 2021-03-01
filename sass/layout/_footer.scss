@@ -58,10 +58,6 @@
   }
 }
 
-.subscribe-form-field {
-  margin-bottom: 20px;
-}
-
 .subscribe-text {
   @include font($fw: 700);
 
@@ -80,24 +76,13 @@
   color: $white-color;
 }
 
-.blok-footer {
-  display: flex;
-  flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
-  flex-wrap: wrap;
-}
-
-.join-us {
-  margin-top: 60px;
-  //   margin-right: 93px;
-}
-
-.subscribe {
-  margin-top: 60px;
-}
-
 @media screen and (max-width: 767px) {
+  .blok-footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
   .basement-contacts-item {
     display: flex;
     justify-content: center;
@@ -118,34 +103,117 @@
     justify-content: center;
   }
 
-  // .subscribe-btn-center {
-  //   display: flex;
-  //   justify-content: center;
-  // }
+  .join-us {
+    margin-top: 60px;
+  }
+
+  .subscribe {
+    margin-top: 60px;
+  }
+
+  .subscribe-form-field {
+    margin-bottom: 20px;
+  }
 }
 
-// .blok-footer {
-//   display: flex;
-//   align-items: baseline;
-//   justify-content: space-between;
-// }
+@media screen and (min-width: 768px) {
+  .blok-footer {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
 
-// .first-blok-footer {
-//   margin-right: 70px;
-// }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .blok-footer {
+    display: flex;
+    justify-content: center;
+  }
 
-// .join-us {
-//   margin-right: 93px;
-// }
+  .first-blok-footer {
+    min-width: 232px;
+    margin-right: 165px;
+  }
 
-// .subscribe {
-//   display: flex;
-//   align-items: baseline;
-//   flex-direction: column;
-//   width: 570px;
+  .basement-contacts-item {
+    display: flex;
+    justify-content: center;
+  }
 
-// }
+  .join-us-text {
+    display: flex;
+    justify-content: center;
+  }
 
-// .form-subscribe {
-//   display: flex;
-// }
+  .address-text {
+    display: flex;
+    justify-content: center;
+  }
+
+  .subscribe-text {
+    display: flex;
+    justify-content: center;
+  }
+
+  .subscribe {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 570px;
+    width: 100%;
+  }
+
+  .subscribe-form-field {
+    display: flex;
+    justify-content: center;
+  }
+
+  .subscribe {
+    margin-top: 60px;
+  }
+
+  .subscribe-form-field {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .blok-footer {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .first-blok-footer {
+    margin-right: 70px;
+  }
+
+  .join-us {
+    margin-right: 93px;
+  }
+
+  .subscribe {
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    // justify-content: space-between;
+    width: 570px;
+  }
+
+  .form-subscribe {
+    display: flex;
+    width: 100%;
+  }
+
+  .subscribe-form-field {
+    width: 570px;
+    width: 100%;
+  }
+
+  .subscribe-btn {
+    // display: flex;
+    justify-content: flex-end;
+    margin-left: 12px;
+  }
+}

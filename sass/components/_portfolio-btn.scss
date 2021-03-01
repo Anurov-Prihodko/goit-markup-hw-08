@@ -18,9 +18,9 @@
 }
 
 .portfolio-btn-item {
-  // margin-bottom: 50px;
   display: flex;
   justify-content: flex-start;
+  margin-bottom: 40px;
   flex-wrap: wrap;
 }
 
@@ -40,5 +40,12 @@
   .portfolio-btn-item {
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-btn-item {
+    margin-bottom: 50px;
   }
 }

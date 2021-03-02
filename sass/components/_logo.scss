@@ -4,7 +4,6 @@
 
   line-height: 1.167;
   color: $black-color;
-  // margin-right: 95px;
 }
 
 .logo-portfolio {
@@ -20,5 +19,6 @@
     @include font($fs: 26px, $fw: 700);
 
     line-height: 1.192;
+    margin-right: 95px;
   }
 }

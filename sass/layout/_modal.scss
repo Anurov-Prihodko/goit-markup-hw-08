@@ -216,7 +216,7 @@
   .modal {
     min-width: 528px;
     width: 100%;
-    min-height: 581px;
+    max-height: 581px;
     height: 100%;
 
     overflow: auto;

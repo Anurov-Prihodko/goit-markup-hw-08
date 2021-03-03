@@ -1441,16 +1441,11 @@ body {
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 0.03em;
+  text-align: center;
   line-height: 1.15;
   color: #212121;
   margin-top: 0;
   margin-bottom: 12px;
-}
-
-@media screen and (max-width: 1199px) {
-  .modal-title {
-    text-align: center;
-  }
 }
 
 .form-field {
@@ -1612,10 +1607,11 @@ body {
 @media screen and (min-width: 1200px) {
   .modal {
     min-width: 528px;
+    max-width: 528px;
     width: 100%;
     max-height: 581px;
     height: 100%;
-    overflow: auto;
+    overflow: visible;
   }
   .agree-checkbox label {
     font-size: 14px;

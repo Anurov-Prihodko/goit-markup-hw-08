@@ -214,8 +214,12 @@
 
 @media screen and (min-width: 1200px) {
   .modal {
-    max-width: 528px;
-    max-height: 581px;
+    min-width: 528px;
+    width: 100%;
+    min-height: 581px;
+    height: 100%;
+
+    overflow: auto;
   }
 
   .agree-checkbox label {

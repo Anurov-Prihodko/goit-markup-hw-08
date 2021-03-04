@@ -69,7 +69,7 @@
   background-color: $white-color;
   padding: 48px 40px;
   z-index: 200;
-
+  overflow: scroll;
   transition: transform $time $function-time;
 }
 

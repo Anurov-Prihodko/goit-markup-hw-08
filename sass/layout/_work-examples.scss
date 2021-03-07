@@ -43,10 +43,6 @@
 }
 
 .work-examples-link {
-  // display: inline-block;
-  // width: 100%;
-  // height: 100%;
-
   transition: box-shadow $time $function-time;
 
   &:hover,
@@ -58,6 +54,9 @@
 @media screen and (max-width: 767px) {
   .work-examples-item:not(:last-child) {
     margin-bottom: 30px;
+  }
+  .tehnocrack {
+    overflow-y: auto;
   }
 }
 

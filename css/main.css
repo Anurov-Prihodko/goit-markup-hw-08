@@ -1337,6 +1337,9 @@ body {
   .work-examples-item:not(:last-child) {
     margin-bottom: 30px;
   }
+  .tehnocrack {
+    overflow-y: auto;
+  }
 }
 
 .tehnocrack-card {

@@ -207,39 +207,86 @@
           <h2 class="title-for-two-blocks">Чем мы занимаемся</h2>
           <ul class="what-we-do-list">
             <li class="what-we-do-item list">
-              <img
-                class="what-we-do-img"
-                src="./img/what-are-we-doing/writin-code.jpg"
-                alt="Программист пишет код"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/what-are-we-doing/writin-code.webp    1x,
+                    ./img/what-are-we-doing/writin-code@2x.webp 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="./img/what-are-we-doing/writin-code@2x.jpg"
+                  media="(min-width:1200px)"
+                />
+
+                <img
+                  class="what-we-do-img"
+                  src="./img/what-are-we-doing/writin-code.jpg"
+                  alt="Программист пишет код"
+                />
+              </picture>
+
               <div class="description-what-we-do">
                 <p class="recital-foto">Десктопные приложения</p>
               </div>
             </li>
 
             <li class="what-we-do-item list">
-              <img
-                class="what-we-do-img"
-                src="./img/what-are-we-doing/work-with-mobile-applications.jpg"
-                alt="Дизайнер выбирает оформление мобильного приложения"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/what-are-we-doing/work-with-mobile-applications.webp    1x,
+                    ./img/what-are-we-doing/work-with-mobile-applications@2x.webp 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./img/what-are-we-doing/work-with-mobile-applications@2x.jpg
+                  "
+                  media="(min-width:1200px)"
+                />
+
+                <img
+                  class="what-we-do-img"
+                  src="./img/what-are-we-doing/work-with-mobile-applications.jpg"
+                  alt="Дизайнер выбирает оформление мобильного приложения"
+                />
+              </picture>
+
               <div class="description-what-we-do">
                 <p class="recital-foto">Мобильные приложения</p>
               </div>
             </li>
 
             <li class="what-we-do-item list">
-              <img
-                class="what-we-do-img"
-                src="./img/what-are-we-doing/web-design.jpg"
-                alt="Дизайнер выбирает цвета на планшете"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/what-are-we-doing/web-design.webp    1x,
+                    ./img/what-are-we-doing/web-design@2x.webp 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="./img/what-are-we-doing/web-design@2x.jpg"
+                  media="(min-width:1200px)"
+                />
+
+                <img
+                  class="what-we-do-img"
+                  src="./img/what-are-we-doing/web-design.jpg"
+                  alt="Дизайнер выбирает цвета на планшете"
+                />
+              </picture>
+
               <div class="description-what-we-do">
                 <p class="recital-foto">Дизайнерские решения</p>
               </div>

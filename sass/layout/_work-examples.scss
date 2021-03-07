@@ -32,9 +32,9 @@
   height: 100%;
   background-color: $card-background;
 
-  overflow: auto;
+  overflow: hidden;
   transition: transform $time $function-time;
-  transform: translateY(100%);
+  transform: translateY(101%);
 
   .work-examples-link:hover &,
   .work-examples-link:focus & {
